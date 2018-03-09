@@ -1,0 +1,46 @@
+
+
+/*this is mobile*/
+h1{
+    width: 100%;
+    float: left;
+    padding: 10px 10px;
+    margin: 10px 10px;
+    text-align: center;
+
+}
+.nav-links{
+    list-style-type: none;
+    display: inline;
+    white-space: pre-line;
+
+}
+.nav-links>li{
+    text-align: center;
+    padding: 4%;
+    background-color: silver;
+
+}
+.hidden-on-desktop{
+    display: block;
+    text-align: center;
+    background-color: #0077e5;
+    padding: 4%;
+
+}
+div>.header-img{
+    width: 100%;
+    align-content: center;
+}
+img{
+    width: 100%;
+}
+
+/*this is desktop*/
+/*This desktop */
+@media screen and (min-width:425px){
+
+    body{
+        background-color: red;
+    }
+}
