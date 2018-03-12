@@ -1,0 +1,58 @@
+
+body{
+    background-color: cornsilk;
+}
+h1{
+    font-size: 250%;
+    color: purple;
+    text-decoration: underline;
+    font-family: "Gurmukhi MN" ;
+    font-weight: bold;
+}
+div{
+
+    font-weight: 300;
+    width: 172px;
+    height: 72px;
+    margin: 10px;
+    padding: 10px;
+    font-family: AppleGothic sans-serif;
+    color: blue;
+    border: solid 1px;
+}
+.red{
+    width: 150px;
+    height: 50px;
+    background-color: red;
+}
+.orange{
+    margin-left: 30px;
+    width: 150px;
+    height: 50px;
+    background-color: orange;
+}
+.yellow{
+    margin-left: 60px;
+    width: 150px;
+    height: 50px;
+    background-color: yellow;
+}
+.green{
+    margin-left: 90px;
+    width: 150px;
+    height: 50px;
+    background-color: green;
+
+}
+.blue{
+    margin-left: 120px;
+    width: 150px;
+    height: 50px;
+    background-color: blue;
+    color: black;
+}
+.purple{
+    margin-left: 150px;
+    width: 150px;
+    height: 50px;
+    background-color: purple;}

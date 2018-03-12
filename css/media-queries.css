@@ -3,7 +3,6 @@
 /*this is mobile*/
 h1{
     width: 100%;
-    float: left;
     padding: 10px 10px;
     margin: 10px 10px;
     text-align: center;
@@ -35,12 +34,52 @@ div>.header-img{
 img{
     width: 100%;
 }
+#social-media-links {
+    width: 10%;
+    float: right;
+    display: inline-block;
+    text-align: right;
+
+
+}
 
 /*this is desktop*/
 /*This desktop */
-@media screen and (min-width:425px){
+@media screen and (min-width:500px){
 
     body{
-        background-color: red;
+        background-color: cornsilk;
     }
+    h1{
+        width: 4%;
+        height: 4%;
+        font-size: 3em;
+        text-align: left;
+        position: relative;
+        top: 0;
+        left: 0;
+
+
+    }
+    .hidden-on-desktop{
+        visibility: hidden;
+    }
+    .nav-links{
+       display: flex;
+       font-size: 1em;
+       position: fixed;
+        top: 0;
+        right: 0;
+
+
+    }
+    .nav-links>li{
+        background-color: transparent;
+
+    }
+
+}
+li{
+    margin: 2em;
+    padding: 2em;
 }

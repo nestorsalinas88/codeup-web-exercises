@@ -19,24 +19,49 @@
         <br>
     </section>
     <section>
+        <label for="bio">This is my bio</label><br>
         <textarea name="bio" id="bio" cols="30" rows="10"></textarea>
         <br>
 
     </section>
     <section>
-        <h2>How did you hear about us</h2>
+        <p>How did you hear about us</p>
         <label for="billboard">
-            billboard <input type="radio" name="other">
-        </label><br>
+            <input type="checkbox" name="market" id="biilboard" value="billboard">
+            billboard
+        </label>
         <label for="radio advertisement">
-            radio advertisement <input type="radio" name="other">
-        </label><br>
+            <input type="checkbox" name="market" id="radio advertisement" value="radio advertisement">
+            radio advertisement
+        </label>
         <label for="internet advertisement">
-            internet advertisement <input type="radio" name="other">
-        </label><br>
+            <input type="checkbox" name="market" id="internet advertisement" value="internet advertisement">
+            internet advertisement
+        </label>
         <label for="other">
-            other <input type="radio" name="other">
-        </label><br>
+            <input type="checkbox" name="market" id="other" value="other">
+            other
+        </label>
+
+    </section>
+
+    <section>
+        <h2>RATE US</h2>
+        <label for="rate">
+            5<input type="radio" name="rate" value="5">
+            4<input type="radio" name="rate" value="4">
+            1<input type="radio" name="rate" value="1">
+        </label>
+    </section>
+
+    <section>
+        <label for="web browser">What web browser are you using?<br></label>
+
+        <select id="web browser" name="web browser">
+            <option value="Duck">DuckDuckgo</option>
+            <option value="Chrome">Google chrome</option>
+            <option value="Safari">Safari</option>
+        </select>
 
     </section>
 

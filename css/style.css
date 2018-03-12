@@ -1,7 +1,132 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
 body{
-    background-color:ghostwhite;
+    background-color: whitesmoke;
+
+}
+div {
+    width: 80%;
+    height: 100%;
+    display: block;
+    position: relative;
+    margin-left: 10%;
+
+
+
+}
+div::after {
+     content: "";
+     background: url("https://image.freepik.com/free-vector/modern-technological-elements-with-transparent-background_1035-7108.jpg");
+     opacity: 0.4;
+     top: 0;
+     left: 0;
+     bottom: 0;
+     right: 0;
+     position: absolute;
+     z-index: -1;}
+h5{
+    color: deepskyblue;
+    text-decoration: underline;
+    /*display: inline;*/
+    font-weight: bold;
+    font-size: 30px;
+    text-align: center;
+
+}
+h1{
+    text-align: center;
+    text-decoration-color: purple;
 }
 
-.fancy-header{
-    color: Orange;
+ul{
+    list-style-type: circle;
+    /*display: inline;*/
+    font-family: Helvetica;
+    list-style-type: none;
 }
+ol{
+    list-style-type: circle;
+    /*display: inline;*/
+    font-family: Georgia;
+    list-style-type: none;
+
+
+}
+
+table{
+    color: blue;
+    alignment: center;
+    margin: auto;
+}
+th{
+    text-decoration: underline;
+}
+td{
+    color: #0077e5;
+    font-size: x-large;
+    text-align: center;
+    text-indent: 10%;
+    margin: auto;
+}
+
+p{
+    text-align: center;
+    color: darkgreen;
+    text-decoration: underline;
+
+}
+
+/*Class selectors use "." periods. Classes can be combined*/
+
+#only{
+    color: darkblue;
+    text-align: center;
+    font-size: x-large;
+    align-content: center;
+
+
+}
+
+#fancy-header{
+    font-family: Helvetica serif;
+    color: black;
+    text-align: center;
+    padding-top: 40px;
+
+}
+
+.value {
+
+    text-align: center;
+    padding: 0px;
+    font-size: 20px;
+}
+.solo{
+    width: 284px;
+    height: 140px;
+
+}
+
+.picture{
+    width: 50%;
+    height: 10%;
+    margin-left: 25%;
+
+
+}
+
+
+/*ID's use "#" numbers */
+/*use pseudo classes */
+
+/*
+When using pseudo classes keep the order of
+1.link
+2.visited
+3.hover
+4.active
+Add a style to change the font for the entire page. Use google fonts if you would like.
+Add a style to change the table, table cells td and rows tr padding and font sizes.
+Add a style to alter the anchor tags and its different states. (e.g. link, visited, hover and active).
+Continue experimenting with styles to increase the visual appeal of the page.
+ pseudo!!!
+*/
