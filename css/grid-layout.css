@@ -1,0 +1,72 @@
+main{
+    width: 80%;
+    margin: auto;
+}
+.container{
+    text-align: center;
+    margin-top: 10%;
+
+}
+
+.column.one-half{
+    padding: 10px;
+    width: 50%;
+    box-sizing: border-box;
+    border: 1px solid;
+    float: left;
+    background-color: gold;
+    margin-bottom: 5%;
+    
+
+
+}
+.column.one-third{
+    width: 33.33%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid;
+    float: left;
+    margin-bottom: 5%;
+    background-color: silver;
+
+}
+.column.one-fourth{
+    width: 25%;
+    padding: 10px;
+    margin-bottom: 5%;
+    float: left;
+    border: 1px solid;
+    box-sizing: border-box;
+    background-color: deepskyblue;
+
+}
+.column.one-sixth{
+    width: 16.66667%;
+    padding: 10px;
+    margin-bottom: 5%;
+    float: left;
+    border: 1px solid;
+   box-sizing: border-box;
+    background-color: purple;
+}
+.column.one-eight{
+    width: 12.5%;
+    padding: 10px;
+    float: left;
+    border: 1px solid;
+    box-sizing: border-box;
+    background-color: red;
+    margin-bottom: 5%;
+}
+
+
+
+
+
+
+/*
+Add the necessary CSS so that your columns take up the full width on small screens.
+Add borders and background colors to your column classes so that you can see the difference between each class.
+Have at least one row that includes three different column classes
+You should wind up with a page that looks similar to the following:
+*/
