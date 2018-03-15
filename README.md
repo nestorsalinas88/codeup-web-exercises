@@ -49,3 +49,10 @@
         -fixed. We use pixels
         -fluid. We use percents
         -responsive. We use media queries
+#CSS frameworks
+    *separation of container and content 
+    * `.component .modifier` (container)
+            `component-header`
+            `component-body`
+            `component-footer`
+    

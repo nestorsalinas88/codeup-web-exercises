@@ -1,11 +1,15 @@
 @media screen and (max-width:500px) {
     main {
-        width: 80%;
-        margin: auto;
-    }
-
-    .container {
+        width: 90%;
+        margin:  0 auto;
+        max-width: 1200px;
         text-align: center;
+    }
+.row{
+    width: 100%;
+}
+    .container {
+
 
 
     }
