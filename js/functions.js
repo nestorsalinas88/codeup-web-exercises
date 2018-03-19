@@ -1,5 +1,55 @@
 "use strict";
-var
+// var daysRentedMermaid = prompt("how many days did you keep the little mermaid?");
+// var daysRentedBear = prompt("how many days did you keep brother bear?");
+// var daysRentedHercules = prompt("how many days did you keep hercules?");
+//
+// var total = (daysRentedMermaid * 3) + (daysRentedBear * 3) + (daysRentedHercules * 3);
+//
+// alert("You'll pay " +  total);
+// var hoursGoogle = prompt("how many hours did you work for Google?");
+// var hoursAmazon = prompt("how many hours did you work for Amazon?");
+// var hoursFacebook = prompt("how many hours did you work for Facebook?");
+//
+// var total = (hoursAmazon * 380) + (hoursFacebook * 350) + (hoursGoogle * 400);
+//
+// alert("You're making " + total)
+//
+//
+// var classFull = confirm("Is class full?");
+// var conflictingSchedule = confirm("Does your schedule work?");
+//
+// var willItWork = (!classFull && !!conflictingSchedule);
+//
+//
+// alert("class is " + willItWork);
+//
+
+// var itemsBought = confirm("Did you buy more than 2 items?");
+// var offerExpire = confirm("did your offer expire?");
+// var premiumMember = confirm("are you a premium member?");
+//
+// var discountOffered = (!offerExpire && !!premiumMember && !!itemsBought);
+//
+// alert("CONGRADUALTIONS YOU'RE A WINNER  " + discountOffered);
+//
+
+var username = prompt("Enter Username");
+var usernameMaxLength = username.length <=20;
+
+
+var password = prompt("Enter password");
+
+
+
+
+// function sayHello(){
+//     alert("hello there!");
+//
+// }
+// sayHello("codeup");
+//
+
+
 
 /**
  * TODO:
