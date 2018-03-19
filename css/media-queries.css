@@ -20,6 +20,9 @@ li{
 
 
 }
+ul{
+    padding: 0;
+}
 a{
     font-size: 2em;
 }
@@ -29,12 +32,12 @@ div{
     align-content: center;
 
 }
-ul.nav-links{
-    width: 100%;
-    padding: 0;
-    height: 400px;
+/*ul.nav-links{*/
+    /*width: 100%;*/
+    /*padding: 0;*/
+    /*height: 400px;*/
 
-}
+/*}*/
 
 .nav-links{
     list-style-type: none;
@@ -62,10 +65,10 @@ img{
 #social-media-links {
     height: auto;
     width: 100%;
-    max-height: 60px;
-    max-width: 60px;
+    max-height: 10em;
+    max-width: 10em;
     display: inline-flex;
-    float: left;
+    float: right;
 
 
 
@@ -78,9 +81,6 @@ img{
         background-color: cornsilk;
         padding: 0;
     }
-    a{
-        width: 0;
-    }
     h1 {
         /*float: left;*/
         text-align: left;
@@ -92,11 +92,7 @@ img{
         width: 33.3333%;
     }
     ul.nav-links{
-        position: absolute;
-        top: 0;
-        left: -4%;
-        text-align: right;
-        letter-spacing: 8px;
+        margin-right: 2em;
     }
     p{
         clear: both;
@@ -105,9 +101,18 @@ img{
     li{
         background: transparent;
         display: inline-block;
+        padding: 1.5%;
 
 
 
+
+    }
+    .container{
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        text-align: right;
 
     }
     .hidden-on-desktop {
@@ -126,5 +131,12 @@ img{
         float: right;
         width: 66.6667%;
     }
+    #social-media-links {
+        max-height: 10em;
+        max-width: 10em;
+        display: inline-flex;
+        float: right;
+    }
+
 }
 
