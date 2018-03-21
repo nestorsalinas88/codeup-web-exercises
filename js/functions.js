@@ -2,14 +2,11 @@
 
 
 
-function sayHello(name){
+function sayHello(name) {
     return "Hello " + name + "!";
 
 }
 
-
-var helloMessage = sayHello("nestor");
-console.log(helloMessage);
 /**
  * TODO:
  * Create a function called 'sayHello' that takes a parameter 'name'.
@@ -19,9 +16,8 @@ console.log(helloMessage);
  * > sayHello("codeup") // returns "Hello, codeup!"
  */
 
-//
-// var helloMessage = sayHello("Nestor");
-// console.log(helloMessage);
+var helloMessage = sayHello("nestor");
+console.log(helloMessage);
 
 
 /**
@@ -32,8 +28,8 @@ console.log(helloMessage);
  * console.log 'helloMessage' to check your work
  */
 
-// var myName = "Nestor Salinas";
-// console.log(sayHello(myName));
+var myName = "Nestor Salinas";
+console.log(sayHello(myName));
 
 /**
  * TODO:
@@ -51,7 +47,10 @@ function isTwo(x) {
     return x === 2;
 
 }
+
+
 console.log('random:' + random);
+console.log('isTwo(random): ' + isTwo(random));
 
 //
 
@@ -74,18 +73,23 @@ console.log('random:' + random);
 //  * number)
 //  */
 
+// function calculatedTip(percent, total) {
+//     var tipAmount = percent * total
+//
+// }
 
 
+function calculatedTip(percent, total) {
+    var tipAmount = (percent / 100) * total;
+    return tipAmount;
 
-function calculatedTip() {
-    var tipAmountInPercent = prompt("enter tip amount in percent");
-    var billAmount = prompt("amount of bill");
-    var tipAmountInDecimal =  tipAmountInPercent / 100;
-    var tipAmount = tipAmountInDecimal * parseInt(billAmount);
-    return alert("This is your total with tip $" + (tipAmount + parseInt(billAmount)));
+
 }
 
-calculatedTip();
+console.log('calculatedTip(0.20, 20): ' + calculatedTip(0.20, 20));
+console.log('calculatedTip(0.25, 25.50): ' + calculatedTip(0.25, 25.50));
+console.log('calculatedTip(0.15, 33.42): ' + calculatedTip(0.15, 33.42));
+
 
 
 /**
@@ -99,6 +103,22 @@ calculatedTip();
  * > calculateTip(0.25, 25.50) // returns 6.37
  * > calculateTip(0.15, 33.42) // returns 5.013
  */
+
+function promptNumber(question) {
+    var userInput = prompt(question);
+    return parseFloat(userInput);
+}
+
+
+var amountToTip = calculatedTip(
+    promptNumber('tip percentage?'),
+    promptNumber('bill today?')
+);
+
+
+
+alert('you should tip $' + amountToTip);
+
 
 /**
  * TODO:
