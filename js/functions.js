@@ -1,6 +1,6 @@
 "use strict";
 
-
+//check github functions from ulysses-web-exercise
 
 function sayHello(name) {
     return "Hello " + name + "!";

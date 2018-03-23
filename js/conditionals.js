@@ -1,5 +1,6 @@
 "use strict";
 
+//check git hub for solution page
 
 function myFunction() {
 

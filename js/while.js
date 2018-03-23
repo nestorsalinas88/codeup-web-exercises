@@ -8,6 +8,10 @@ while( i <= 65536 /*condition*/){
     i*=2 /* increment/decrement/accumulator*/
 }
 
+//for: when you know exactly how many times you  need to loop
+//while or do while: if you don't know how many repetitions
+//use do while if you need to repeat something at least once
+//use while when you might not repeat even once
 
 
 
