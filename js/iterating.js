@@ -38,7 +38,9 @@
          * array.
          */
 names.forEach(function (a,b,c)  {
+    console.log(a);
     console.log(b);
+    console.log(c);
 });
 
 
@@ -60,34 +62,34 @@ names.forEach(function (a,b,c)  {
 // *  > last([1, 2, 3, 4, 5]) // return 5
 
 
-//     function first(array) {
-//         if (Array.isArray(array)) {
-//             return array[0];
-//         }
-//     }
-//
-//     function second(array) {
-//         if (Array.isArray(array)) {
-//             return array[1];
-//         }
-//     }
-//
-//     function last(array) {
-//         if (Array.isArray(array)) {
-//             return array[array.length - 1];
-//         }
-//     }
-//
-//     function nextToLast(array) {
-//         return array[array.length - 2];
-//     }
-//
-//     console.log(first([]));
-//     console.log(second([6, 7, 8, 9, 10]));
-//
-//     console.log(last(names));
-//     console.log(nextToLast(names));
-//
-//     console.log(nextToLast([1, 2, 3, 4, 5, 6]));
-// }
+    function first(array) {
+        if (Array.isArray(array)) {
+            return array[0];
+        }
+    }
+    console.log(first([0]));
 
+
+    function second(array) {
+        if (Array.isArray(array)) {
+            return array[1];
+        }
+    }
+    console.log(second([6, 7, 8, 9, 10]));
+
+
+    function last(array) {
+        if (Array.isArray(array)) {
+            return array[array.length - 1];
+        }
+    }
+    console.log(last(names));
+
+
+    function nextToLast(array) {
+        return array[array.length - 2];
+    }
+    console.log(nextToLast(names));
+    console.log(nextToLast([1, 2, 3, 4, 5, 6]));
+
+//practice making functions with arrays
