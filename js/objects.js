@@ -62,10 +62,12 @@ console.log(anotherPerson.firstName + " " + anotherPerson.lastName);
         if(shopper.amount > 200){
             var discountAmount = shopper.amount * .12;
             shopper.amount = shopper.amount - discountAmount;
+            var total = shopper.amount + discountAmount;
 
         }
         console.log(shopper.name + " spend " + shopper.amount);
         console.log(discountAmount);
+        console.log(total);
     });
 
 
