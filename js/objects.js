@@ -168,15 +168,15 @@ var books = [
             }
         }
     }
-console.log(newBooks("Intro Java", "Nestor Salinas"));
+console.log(newBooks("JavaScript Patterns", "Stoyan Stefanov"));
 
     // Create books array using calls to createBook() function
     var books = [
-        newBooks("1984", "George Orwell"),
-        newBooks("The Lord of the Rings", "J.R.R. Tolkien"),
-        newBooks("R is for Rocket", "Ray Bradbury"),
-        newBooks("The Lost World", "Michael Crichton"),
-        newBooks("The Shining", "Stephen King")
+        newBooks("Effective JS", "Unknown"),
+        newBooks("JS ninja", "Unknown"),
+        newBooks("Speaking JavaScript", "Unknown"),
+        newBooks("JS for dummies", "Unknown"),
+        newBooks("A smarter way to learn JS", "Unknown")
     ];
 
     console.log(books);
