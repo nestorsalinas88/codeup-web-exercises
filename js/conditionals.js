@@ -1,6 +1,6 @@
 "use strict";
 
-//check git hub for solution page
+
 
 function myFunction() {
 
@@ -23,20 +23,18 @@ function myFunction() {
 
     alert(parseInt(userInput) + 100);
 
-    confirm("Do you want to know if this number is neg or pos?")
+    confirm("Do you want to know if this number is neg or pos?");
 
     if (userInput < (-1)) {
         alert("negative");
-    }else if(userInput){
-
     }else {
         alert("positive")
     }
-
-    if (Number(userInput)) {
-        alert("Congrats you know what a number is!");
-    } else
-        alert("This is an invalid statement!");
+    //
+    // if (Number(userInput)) {
+    //     alert("Congrats you know what a number is!");
+    // } else
+    //     alert("This is an invalid statement!");
 }
 myFunction();
 
@@ -58,7 +56,7 @@ myFunction();
 //i will work on refactoring my code with fuctions
 
 /* ########################################################################## */
-// prompt("whats your favorite number");
+prompt("whats your favorite number");
 
 function analyzeColor(colorName) {
     var userColor = prompt("what is your favorite color");
@@ -163,3 +161,14 @@ var randomColor = colors[Math.floor(Math.random() * colors.length)];
  */
 // Generate a random number between 0 and 6
 // var luckyNumber = Math.floor(Math.random() * 6);
+
+//
+// function washCar(waxCarToo) {
+//     console.log("washing the car....");
+//     if(waxCarToo){
+//         console.log("waxing the car....")
+//     }
+// }
+//
+//
+// washCar(false);
