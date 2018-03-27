@@ -173,8 +173,8 @@ var books = [
 console.log(newBooks("JavaScript Patterns", "Stoyan Stefanov"));
 
     // Create books array using calls to createBook() function
-    var books = [
-        newBooks("Effective JS", "Unknown"),
+     books = [
+        newBooks("Effective JS", "Unknown last"),
         newBooks("JS ninja", "Unknown"),
         newBooks("Speaking JavaScript", "Unknown"),
         newBooks("JS for dummies", "Unknown"),

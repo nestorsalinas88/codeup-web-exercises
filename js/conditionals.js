@@ -2,41 +2,70 @@
 
 
 
-function myFunction() {
+// function isNumeric(input) {
+//     if(isNaN(parseFloat(input))){
+//         return false;
+//     }else {
+//         return true;
+//     }
+// }
+// var wantsToEnterNumber = confirm("would you like to enter a number?");
+// if(wantsToEnterNumber){
+//     var number = prompt("please enter a number!");
+//     number = parseFloat(number);
+//
+//     if(!isNumeric(number)){
+//         alert("You have to input a number yo!");
+//     }else{
+//         if(number % 2 == 0){
+//             alert(number + " is even");
+//         }else {
+//             alert(number + " is odd");
+//         }
+//         alert(number + " plus 100 is: " + (100 + number));
+//
+//         if(number < 0){
+//             alert(number + " is negative!");
+//         } else if(number > 0){
+//             alert(number + " is positive");
+//         } else {
+//             alert(number + " is neither positive or negative");
+//         }
+//     }
+// }
 
 
-    var insertNumber = confirm("Would you like to enter a number?");
-    if(insertNumber === true){
-
-    }
-    var userInput = prompt("whats your favorite digits?");
-
-    if (userInput % 2 === 0) {
-        alert("Even!");
-    } else if (userInput != parseInt(userInput)){
-        alert("Dude this is not a number");
-        return myFunction();
-    }
-    else {
-        alert("Odd!")
-    }
-
-    alert(parseInt(userInput) + 100);
-
-    confirm("Do you want to know if this number is neg or pos?");
-
-    if (userInput < (-1)) {
-        alert("negative");
-    }else {
-        alert("positive")
-    }
+    // var insertNumber = confirm("Would you like to enter a number?");
+    // if(insertNumber === true){
+    //
+    // }
+    // var userInput = prompt("whats your favorite digits?");
+    //
+    // if (userInput % 2 === 0) {
+    //     alert("Even!");
+    // } else if (userInput != parseInt(userInput)){
+    //     alert("Dude this is not a number");
+    //     return myFunction();
+    // }
+    // else {
+    //     alert("Odd!")
+    // }
+    //
+    // alert(parseInt(userInput) + 100);
+    //
+    // confirm("Do you want to know if this number is neg or pos?");
+    //
+    // if (userInput < (-1)) {
+    //     alert("negative");
+    // }else {
+    //     alert("positive")
+    // }
     //
     // if (Number(userInput)) {
     //     alert("Congrats you know what a number is!");
     // } else
     //     alert("This is an invalid statement!");
-}
-myFunction();
+
 
 /**
  * TODO:
@@ -56,34 +85,6 @@ myFunction();
 //i will work on refactoring my code with fuctions
 
 /* ########################################################################## */
-prompt("whats your favorite number");
-
-function analyzeColor(colorName) {
-    var userColor = prompt("what is your favorite color");
-    if(userColor === "blue"){
-        return alert("the sky is blue");
-    }else if (userColor === "red"){
-        return alert("roses are red");
-    }else if (userColor === "orange"){
-        return alert("I dont know anything about cyan");
-    }else if(userColor === "yellow"){
-        return alert("bananas are yellow")
-    }else if(userColor === "green"){
-        return alert("grass is green")
-    }else if(userColor === "indigo"){
-        return alert("ink is indigo")
-    }else if(userColor === "violet"){
-        return alert("violet you're violet")
-    }else {
-        return alert("Your color is not cool enoughh!");
-    }
-
-}
-analyzeColor();
-
-
-
-
 /**
  * TODO:
  * Create a function named `analyzeColor` that accepts a string that is a color
@@ -102,6 +103,39 @@ analyzeColor();
  * console.logging the function's return value
  */
 
+
+function analyzeColor(input) {
+    var message;
+
+
+    if(input === "blue"){
+        message = "the sky is blue";
+    }else if (input === "red"){
+        message = "roses are red";
+    }else if (input === "orange"){
+        message = "orange is orange";
+    }else if(input === "yellow"){
+        message = "bananas are yellow";
+    }else if(input === "green"){
+        message = "grass is green";
+    }else if(input === "indigo"){
+        message = "ink is indigo";
+    }else if(input === "violet"){
+        message = "violet you're violet";
+    }else {
+        message = "Your color is not cool enoughh!";
+    }
+    return message;
+}
+
+console.log(analyzeColor("blue"));
+console.log(analyzeColor("red"));
+console.log(analyzeColor("orange"));
+console.log(analyzeColor("green"));
+console.log(analyzeColor("violet"));
+
+
+
 // Don't change the next two lines!
 // These lines create two variables for you:
 // - `colors`: a list of the colors of the rainbow
@@ -117,11 +151,44 @@ var randomColor = colors[Math.floor(Math.random() * colors.length)];
  * Pass the `randomColor` variable to your function and console.log the results.
  * You should see a different message everytime you refresh the page
  */
-
+console.log(randomColor);
 /**
  * TODO:
  * Refactor your above function to use a switch-case statement
  */
+
+function analyzeColor(input) {
+    var message;
+
+    switch(input) {
+        case "red":
+            message = "Roses are red";
+            break;
+        case "orange":
+            message = "Orange you glad I didn't say banana";
+            break;
+        case "yellow":
+            message = "Gold is yellow, sorta";
+            break;
+        case "green":
+            message = "Grass is green";
+            break;
+        case "blue":
+            message = "Blue is the color of the sky.";
+            break;
+        case "violet":
+            message = "Violets are violet";
+            break;
+        case "indigo":
+            message = "Jeans are indigo";
+            break;
+        default:
+            message = "I don't know anything about the color " + input;
+            break;
+    }
+
+    return message;
+}
 
 /**
  * TODO:
@@ -129,6 +196,10 @@ var randomColor = colors[Math.floor(Math.random() * colors.length)];
  * user to your `analyzeColor` function. Alert the return value from your
  * function to show it to the user.
  */
+
+var userColorChoice = prompt("Please share your favorite color!");
+var result = analyzeColor(userColorChoice);
+console.log(result);
 
 /* ########################################################################## */
 
@@ -151,7 +222,31 @@ var randomColor = colors[Math.floor(Math.random() * colors.length)];
  * Test your function by passing it various values and checking for the expected
  * return value.
  */
+function calculateTotal(luckyNumber, total) {
 
+    if(luckyNumber == 0) {
+        return total;
+    } else if(luckyNumber == 1) {
+        return total - (total * .1)
+    } else if(luckyNumber == 2) {
+        return total - (total * .25);
+    } else if(luckyNumber == 3) {
+        return total - (total * .35);
+    } else if(luckyNumber == 4) {
+        return total - total * .5;
+    } else if(luckyNumber == 5) {
+        return total - total * 1;
+    } else {
+        return total;
+    }
+}
+
+console.log(calculateTotal(1, 500));
+console.log(calculateTotal(2, 200));
+console.log(calculateTotal(3, 300));
+console.log(calculateTotal(4, 100));
+console.log(calculateTotal(5, 1000));
+console.log(calculateTotal(40, 1200));
 /**
  * TODO:
  * Uncomment the line below to generate a random number between 0 and 6.
@@ -159,16 +254,9 @@ var randomColor = colors[Math.floor(Math.random() * colors.length)];
  * and alerts to display to the user what their lucky number was, what their
  * price before the discount was, and what their price after the discount is.
  */
-// Generate a random number between 0 and 6
-// var luckyNumber = Math.floor(Math.random() * 6);
+var luckyNumber = Math.floor(Math.random() * 6);
+var total = prompt("How much was the total amount spent?");
+alert("Your lucky number is " + luckyNumber);
+alert("Price before the discount is " + total);
+alert("after the discount, your total is " + calculateTotal(luckyNumber, total));
 
-//
-// function washCar(waxCarToo) {
-//     console.log("washing the car....");
-//     if(waxCarToo){
-//         console.log("waxing the car....")
-//     }
-// }
-//
-//
-// washCar(false);
