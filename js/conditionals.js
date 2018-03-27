@@ -35,36 +35,36 @@
 // }
 
 
-    // var insertNumber = confirm("Would you like to enter a number?");
-    // if(insertNumber === true){
-    //
-    // }
-    // var userInput = prompt("whats your favorite digits?");
-    //
-    // if (userInput % 2 === 0) {
-    //     alert("Even!");
-    // } else if (userInput != parseInt(userInput)){
-    //     alert("Dude this is not a number");
-    //     return myFunction();
-    // }
-    // else {
-    //     alert("Odd!")
-    // }
-    //
-    // alert(parseInt(userInput) + 100);
-    //
-    // confirm("Do you want to know if this number is neg or pos?");
-    //
-    // if (userInput < (-1)) {
-    //     alert("negative");
-    // }else {
-    //     alert("positive")
-    // }
-    //
-    // if (Number(userInput)) {
-    //     alert("Congrats you know what a number is!");
-    // } else
-    //     alert("This is an invalid statement!");
+    var insertNumber = confirm("Would you like to enter a number?");
+    if(insertNumber === true){
+
+    }
+    var userInput = prompt("whats your favorite digits?");
+
+    if (userInput % 2 === 0) {
+        alert("Even!");
+    } else if (userInput != parseInt(userInput)){
+        alert("Dude this is not a number");
+        return myFunction();
+    }
+    else {
+        alert("Odd!")
+    }
+
+    alert(parseInt(userInput) + 100);
+
+    confirm("Do you want to know if this number is neg or pos?");
+
+    if (userInput < (-1)) {
+        alert("negative");
+    }else {
+        alert("positive")
+    }
+
+    if (Number(userInput)) {
+        alert("Congrats you know what a number is!");
+    } else
+        alert("This is an invalid statement!");
 
 
 /**
@@ -104,7 +104,7 @@
  */
 
 
-function analyzeColor(input) {
+function analyzeColour(input) {
     var message;
 
 
@@ -128,11 +128,11 @@ function analyzeColor(input) {
     return message;
 }
 
-console.log(analyzeColor("blue"));
-console.log(analyzeColor("red"));
-console.log(analyzeColor("orange"));
-console.log(analyzeColor("green"));
-console.log(analyzeColor("violet"));
+console.log(analyzeColour("blue"));
+console.log(analyzeColour("red"));
+console.log(analyzeColour("orange"));
+console.log(analyzeColour("green"));
+console.log(analyzeColour("violet"));
 
 
 
@@ -226,15 +226,15 @@ function calculateTotal(luckyNumber, total) {
 
     if(luckyNumber == 0) {
         return total;
-    } else if(luckyNumber == 1) {
+    } else if(luckyNumber === 1) {
         return total - (total * .1)
-    } else if(luckyNumber == 2) {
+    } else if(luckyNumber === 2) {
         return total - (total * .25);
-    } else if(luckyNumber == 3) {
+    } else if(luckyNumber === 3) {
         return total - (total * .35);
-    } else if(luckyNumber == 4) {
+    } else if(luckyNumber === 4) {
         return total - total * .5;
-    } else if(luckyNumber == 5) {
+    } else if(luckyNumber === 5) {
         return total - total * 1;
     } else {
         return total;
