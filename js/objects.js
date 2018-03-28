@@ -1,6 +1,8 @@
 (function() {
     "use strict";
 
+//You can also use array access notation which specifies the objects properties with in []
+
 
 //    OBJECT LITERAL
 var person = {
@@ -36,7 +38,6 @@ console.log(anotherPerson.firstName + " " + anotherPerson.lastName);
 
 
 
-
     /** TODO:
      * HEB has an offer for the shoppers that buy products amounting to
      * more than $200. If a shopper spends more than $200, they get a 12%
@@ -65,9 +66,9 @@ console.log(anotherPerson.firstName + " " + anotherPerson.lastName);
             var total = shopper.amount + discountAmount;
 
         }
-        console.log(shopper.name + " spend " + shopper.amount);
-        console.log(discountAmount);
-        console.log(total);
+        console.log(shopper.name + " spent $" + shopper.amount);
+        console.log(shopper.name + " received a discount of $" + discountAmount);
+        console.log(shopper.name + "'s original total amount was $" + total);
     });
 
 
@@ -83,6 +84,8 @@ console.log(anotherPerson.firstName + " " + anotherPerson.lastName);
      * > console.log(books[0].author.firstName) // "Douglas"
      * > console.log(books[0].author.lastName) // "Adams"
      */
+
+//    The pragmatic programmer, refactoring, clean code, 97 things every programmer should know, test driven dev by example
 var books = [
         {
         title: 'Eloquent JavaScript',
@@ -175,14 +178,13 @@ console.log(newBooks("JavaScript Patterns", "Stoyan Stefanov"));
     // Create books array using calls to createBook() function
      books = [
         newBooks("Effective JS", "Unknown last"),
-        newBooks("JS ninja", "Unknown"),
-        newBooks("Speaking JavaScript", "Unknown"),
-        newBooks("JS for dummies", "Unknown"),
+        newBooks("JS ninja", "Unknown last"),
+        newBooks("Speaking JavaScript", "Unknown last"),
+        newBooks("JS for dummies", "Unknown last"),
         newBooks("A smarter way to learn JS", "Unknown")
     ];
 
     console.log(books);
-
 
     // Create function to showBookInfo()
     function showBookInfo(book, index) {
