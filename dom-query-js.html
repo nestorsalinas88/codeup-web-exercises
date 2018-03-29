@@ -9,6 +9,8 @@
 <body>
 
 <h1 id="main-header">Hello World!</h1>
+    <button> Change heading</button>
+    <button>Change list </button>
 <ul>
     <li data-dbid="1">Item 1</li>
     <li data-dbid="2">Item 2</li>
@@ -17,6 +19,7 @@
     <li data-dbid="5">Item 5</li>
 </ul>
 <h2 id="sub-header">Hello Again.</h2>
+<button class="listItem"> change Sub-header</button>
 <p class="sub-paragraph">
     Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
     eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
@@ -26,10 +29,54 @@
     pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
     culpa qui officia deserunt mollit anim id est laborum.
 </p>
+<button> This will alter alot of the website </button>
 
 <script>
     (function() {
         "use strict";
+
+        var target = document.getElementsByTagName("button")[0];
+
+        function changeText() {
+            document.querySelector("h1").innerText = "Hi, everyone";
+        }
+
+        target.addEventListener("click", changeText);
+
+        var changeList = document.getElementsByTagName("button")[1];
+        function listItem() {
+            document.querySelector("body > ul > li:nth-child(3)").innerText = "Replaced Item";
+
+        }
+
+        changeList.addEventListener("click", listItem);
+
+
+        var tg = document.getElementsByTagName("button")[2];
+
+         function subHeading() {
+             document.querySelector("h2").innerText = "BYE, NOW";
+         }
+
+
+        tg.addEventListener("click", subHeading);
+
+
+         var changeItem = document.getElementsByTagName("button")[3];
+
+         changeItem.addEventListener("mouseover", function() {
+            document.querySelector("body > ul > li:nth-child(1)").innerText = "HTML";
+            document.querySelector("body > ul > li:nth-child(2)").innerText = "CSS";
+            document.querySelector("body > ul > li:nth-child(3)").innerText = "JS";
+            document.querySelector("body > ul > li:nth-child(4)").innerText = "JAVA";
+            document.querySelector("body > ul > li:nth-child(5)").innerText = "Python";
+             document.querySelector("h2").innerText = "Define the following:";
+             document.querySelector("h1").innerText = "Current curriculum";
+     });
+
+
+
+
         // TODO: Uncomment next line and get the main header element by id
         var mainHeader = document.getElementById("main-header");
 
@@ -49,7 +96,7 @@
 
 
         // TODO: Set text color on every other list item to grey
-        for(var i = 0; i < 5; i += 2){
+        for(var i = 0; i < listItems.length; i += 2){
             listItems[i].style.color = "grey";
 
         }
@@ -63,11 +110,23 @@
         var subParagraphs = document.getElementsByClassName("sub-paragraph");
         console.log(subParagraphs);
 
-
+        //subParagraphs = Array.from(subParagraphs);
+        //this is a method to create a *real* array from an HTML collection (which is a kinda sorta array)
 
         // TODO: Change the text in the first sub paragraph to "Mission Accomplished!"
 
-        subParagraphs[0].innerText =  "whatever";//subParagraphs[0].innerText.replace(,"Whatever");
+        subParagraphs[0].innerText =  "Mission Accomplished!";
+        //subParagraphs[0].innerText.replace(,"Whatever");
+
+        //if you need to target specific child element with in HTML
+    //    right clickit in the browser
+        // inspect
+        // right click it in the inspector -> copy -> copy selector
+    //    this will give you the most efficient CSS selector for that specific element
+    //    this selector can be directly used in your CSS style definitions
+    //    document.querySelector()
+    //    document.querySelectorAll()
+
     })();
 </script>
 
