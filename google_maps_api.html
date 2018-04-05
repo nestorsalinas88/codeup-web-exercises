@@ -3,12 +3,100 @@
 <head>
     <meta charset="UTF-8">
     <title>Google Maps</title>
+
+    <style type="text/css">
+        #map-canvas{
+            width: 80%;
+            height: 600px;
+            flex-flow: row;
+            margin-left: 10%;
+            margin-right: 10%;
+        }
+    </style>
 </head>
 <body>
-<div id="map-canvas"></div>
+<!--this will hold the map in my HTML-->
+    <div id="map-canvas"></div>
 
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCKfNi1QJDoGIPXuxmILS4yBy9js8zIIPA"></script>
+<!-- Load the Google maps API make sure to have proper key-->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCKfNi1QJDoGIPXuxmILS4yBy9js8zIIPA"></script>
 
+<!-- This function will show the address on the map-->
+    <script type="text/javascript">
+
+    (function () {
+        "use strict";
+
+        //set the options with in our map
+        var mapOptions = {
+            //Zoom level from 1 - 23
+            zoom: 20,
+            // //setting the location in the map
+            center: {
+                lat: 29.426791,
+                lng: -98.489602
+            },
+            //Show this map in Satellite view
+            mapTypeId: google.maps.MapTypeId.SATELLITE
+
+        };
+        var mapCanvas = document.getElementById('map-canvas');
+        //render the map
+        var map = new google.maps.Map(mapCanvas, mapOptions);
+
+        var geocoder = new google.maps.Geocoder();
+
+        function callback(results, status, restaurant) {
+            if (status === google.maps.GeocoderStatus.OK) {
+
+
+                map.setCenter(results[0].geometry.location);
+                map.setMapTypeId(google.maps.MapTypeId.SATELLITE);
+                map.setZoom(14);
+
+                var marker = new google.maps.Marker({
+                    position: results[0].geometry.location,
+                    map: map
+                });
+
+                var info = new google.maps.InfoWindow({
+                    content: restaurant.info
+                });
+                info.open(map, marker);
+
+            } else {
+
+
+                alert("Geocoding was not sucessful - STATUS: " + status);
+            }
+                //geocode(request:GeocoderRequest, callback:function(Array.<GeocoderResult>, GeocoderStatus))
+        }
+
+        var restaurants = [
+            {
+
+                address: "9921 Frontage Rd, San Antonio, TX 78230",
+                info: "This is "
+            },
+            {
+                address: "22410 US Hwy 281 N, San Antonio, TX 78259",
+                info: "Info 2"
+            },
+            {
+                address: "849 E Commerce St, San Antonio TX, 78205",
+                info: "Info 3"
+            }
+        ];
+
+        restaurants.forEach(function (restaurant) {
+            geocoder.geocode({address: restaurant.address}, function (results, status) {
+                console.log(results, status, restaurant);
+                callback(results, status, restaurant);
+            });
+        });
+    })();
+
+</script>
 
 </body>
 </html>
