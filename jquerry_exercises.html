@@ -3,16 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <title>Jquerry</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <style type="text/css">
+        .backgroud::before{
+            content: url("#");
+        }
+
+
+    </style>
 </head>
 <body>
-    <h1>this is it </h1>
-    <h1>This is all you get</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam, assumenda at cumque error est facilis impedit, laboriosam laudantium nisi odit omnis perspiciatis quaerat quis reiciendis rerum unde voluptate voluptatem voluptatibus?
-    </p>
-    <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab amet cum distinctio dolores eius labore nobis repellendus velit? Accusamus consectetur debitis deleniti dicta mollitia neque ratione recusandae repellendus sunt unde.
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus amet dignissimos, error laudantium pariatur tempore unde! Beatae dolorem enim error explicabo iure laborum maiores nulla quam quos, sunt vel voluptate!
-    </p>
+    <div class="backgroud">
+        <div class="container-fluid row m-0 p-0">
+            <div class="col-12 p-0">
+                <h1 class="bg-primary text-white text-center ">
+                    Alternative Learning With Machines
+                </h1>
+            </div>
+        </div>
+        <h1 id="sub-main" class="text-center">this is it </h1>
+        <h1 id="codeup" class="text-center">This is all you get</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam, assumenda at cumque error est facilis impedit, laboriosam laudantium nisi odit omnis perspiciatis quaerat quis reiciendis rerum unde voluptate voluptatem voluptatibus?
+        </p>
+        <p class="content bg-secondary">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab amet cum distinctio dolores eius labore nobis repellendus velit? Accusamus consectetur debitis deleniti dicta mollitia neque ratione recusandae repellendus sunt unde.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus amet dignissimos, error laudantium pariatur tempore unde! Beatae dolorem enim error explicabo iure laborum maiores nulla quam quos, sunt vel voluptate!
+        </p>
+        <ul class="list-group text-center">
+            <li class="awesome btn btn-primary">Codeup</li>
+            <li class="btn btn-warning codeup">Code Academy</li>
+            <li class="btn btn-warning codeup">Udemy</li>
+            <li class="awesome btn btn-primary">Data Camp</li>
+            <li class="btn btn-warning ">Free Code Camp</li>
+        </ul>
+    </div>
 
 
 
@@ -23,11 +47,27 @@
 
 <script type="text/javascript">
 "use strict";
+// This will  load as soon as the DOM is finished loading
 
-$(document).ready(function () {
-    alert("DOM is finished loading!");
+// $(document).ready(function () {
+//     alert("DOM is finished loading!");
+//
+// });
 
-});
+// This is selecting an ID and spitting the content of the ID onto
+//an alert prompt
+// getter and setter
+// var content = $("#sub-main").html();
+// alert(content.toUpperCase());
+
+    // you can also modify the CSS style through the Jquery
+    // $('.codeup').css('border', '1px solid red');
+
+
+    // $('li').css('font-size', '20px');
+// $('h1, p, li').css('background-color', 'yellow');
+// var content = $('h1').html();
+// alert(content.toLowerCase());
 
 </script>
 
