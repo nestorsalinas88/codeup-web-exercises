@@ -5,8 +5,24 @@
     <title>Jquerry</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <style type="text/css">
-        .backgroud::before{
-            content: url("#");
+        .backgroud{
+            display: block;
+            position: relative;
+            width: 100%;
+            height: 80%;
+        }
+
+        .backgroud::after{
+            content: "";
+            background: url("img/code-computer-cyberspace-225769.jpg");
+            opacity: 0.5;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            position: absolute;
+            z-index: -1;
+
         }
 
 
@@ -16,13 +32,16 @@
     <div class="backgroud">
         <div class="container-fluid row m-0 p-0">
             <div class="col-12 p-0">
-                <h1 class="bg-primary text-white text-center ">
+                <h1 class="title bg-primary text-white text-center ">
                     Alternative Learning With Machines
                 </h1>
             </div>
         </div>
-        <h1 id="sub-main" class="text-center">this is it </h1>
-        <h1 id="codeup" class="text-center">This is all you get</h1>
+        <div>
+
+            <h1 id="sub-main" class="text-center">this is it </h1>
+            <h1 id="codeup" class="text-center">This is all you get</h1>
+        </div>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam, assumenda at cumque error est facilis impedit, laboriosam laudantium nisi odit omnis perspiciatis quaerat quis reiciendis rerum unde voluptate voluptatem voluptatibus?
         </p>
         <p class="content bg-secondary">
@@ -69,6 +88,21 @@
 // var content = $('h1').html();
 // alert(content.toLowerCase());
 
+    $("h1").click(function () {
+            $(this).css('background-color', 'yellow');
+        });
+    $('p').dblclick(function (e) {
+       $(this).css('font-size', '18px')
+    });
+
+    $('li').hover(
+        function () {
+            $(this).css('color', 'red');
+        },
+        function () {
+            $(this).css('color', 'black');
+        }
+    );
 </script>
 
 </body>
