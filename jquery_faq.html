@@ -89,12 +89,14 @@ $(document).keydown(function (e) {
 $("#button").dblclick(function () {
     $(".highlight").toggleClass("last");
 });
-// function toggleClass(selector) {
-//     if($(selector).hasClass(className)){
-//         $(this).addClass("highlight");
-//     });
-// }
 
+$('h3').click(function () {
+    $('li').css('font-weight', 'bold')
+});
+
+$('li').click(function () {
+    $('li:first-child').css('color', 'blue')
+});
 
 </script>
 
