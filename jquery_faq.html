@@ -7,13 +7,11 @@
         .invisible{
             display: none;
         }
-        .hide{
-            background-color: blue;
-
-        }
         .highlight{
+            background-color: yellow;
 
         }
+
 
     </style>
 </head>
@@ -35,18 +33,41 @@
         <dd class="invisible">Answer</dd>
     </dl>
 
+    <h3>National Park Name</h3>
+    <ul>
+        <li>Fact1</li>
+        <li>Fact 2</li>
+        <li>Fact 3</li>
+        <li>Fact 4</li>
+    </ul>
+
+    <h3>National Park Name</h3>
+    <ul>
+        <li>Fact1</li>
+        <li>Fact 2</li>
+        <li>Fact 3</li>
+        <li>Fact 4</li>    </ul>
+
+    <h3>National Park Name</h3>
+    <ul>
+        <li>Fact1</li>
+        <li>Fact 2</li>
+        <li>Fact 3</li>
+        <li>Fact 4</li>
+    </ul>
+
     <a href="#" id="id">Click to toggle the highlighting of important text.</a>
 
 <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
 <script>
 
-    $(document).click(function () {
+    $("dt").click(function () {
         $(".invisible").toggleClass();
     });
 
 
 $("dd").dblclick(function () {
-    $("dd").addClass('hide');
+    $("dd").addClass('highlight');
     console.log("Just anything");
 });
 
