@@ -11,6 +11,9 @@
             background-color: yellow;
 
         }
+        .last{
+            background-color: white;
+        }
 
 
     </style>
@@ -38,7 +41,7 @@
         <li>Fact1</li>
         <li>Fact 2</li>
         <li>Fact 3</li>
-        <li>Fact 4</li>
+        <li class="last highlight">Fact 4</li>
     </ul>
 
     <h3>National Park Name</h3>
@@ -46,15 +49,21 @@
         <li>Fact1</li>
         <li>Fact 2</li>
         <li>Fact 3</li>
-        <li>Fact 4</li>    </ul>
+        <li class="last highlight">Fact 4</li>    </ul>
 
     <h3>National Park Name</h3>
     <ul>
         <li>Fact1</li>
         <li>Fact 2</li>
         <li>Fact 3</li>
-        <li>Fact 4</li>
+        <li class="last highlight">Fact 4</li>
     </ul>
+
+    <form>
+        <label for="button">
+            <button type="button" id="button"> Click this here now</button>
+        </label>
+    </form>
 
     <a href="#" id="id">Click to toggle the highlighting of important text.</a>
 
@@ -77,6 +86,9 @@ $(document).keydown(function (e) {
     }
 });
 
+$("#button").dblclick(function () {
+    $(".highlight").toggleClass("last");
+});
 // function toggleClass(selector) {
 //     if($(selector).hasClass(className)){
 //         $(this).addClass("highlight");
