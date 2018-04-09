@@ -3,30 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <style type="text/css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">    <style type="text/css">
         .invisible{
             display: none;
         }
+        .hide{
+            background-color: blue;
+
+        }
+        .highlight{
+
+        }
+
     </style>
 </head>
 <body>
-<dl>
-    <dt>Question</dt>
-    <dd class="invisible">Answer</dd>
-    <dt>Question</dt>
-    <dd class="invisible">Answer</dd>
-    <dt>Question</dt>
-    <dd class="invisible">Answer</dd>
-    <dt>Question</dt>
-    <dd class="invisible">Answer</dd>
-    <dt>Question</dt>
-    <dd class="invisible">Answer</dd>
-    <dt>Question</dt>
-    <dd class="invisible">Answer</dd>
-    <dt>Question</dt>
-    <dd class="invisible">Answer</dd>
+    <dl>
+        <dt class=>Q:  Can I drink alcohol in a state park?</dt>
+        <dd class="invisible">It is against park rules to drink or display an alcoholic beverage in a public place at any time. All outdoor areas are public in a state park. Also, we cannot sell alcoholic beverages within a state park.</dd>
+        <dt>Q:  Can I ride my bike in state parks?</dt>
+        <dd class="invisible"> Almost all state parks offer road or mountain biking, or both! Many parks have long stretches of road (some winding and hilly). Many of our parks have multiuse trails. Visit our Biking page for detailed information on places to bike..</dd>
+        <dt>Q:  Where can I go birding? Do you have a bird checklist?</dt>
+        <dd class="invisible">Answer</dd>
+        <dt>Q:  May I build a campfire in a state park?</dt>
+        <dd class="invisible">Answer</dd>
+        <dt>Q:  Which state parks were built by the CCC?</dt>
+        <dd class="invisible">Answer</dd>
+        <dt>Q:  Can I bring my pet to a state park?</dt>
+        <dd class="invisible">Answer</dd>
+        <dt>Q: Can I fly a drone or other remote control aircraft in a state park?</dt>
+        <dd class="invisible">Answer</dd>
+    </dl>
 
-</dl>
+    <a href="#" id="id">Click to toggle the highlighting of important text.</a>
+
+<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+<script>
+
+    $(document).click(function () {
+        $(".invisible").toggleClass();
+    });
+
+
+$("dd").dblclick(function () {
+    $("dd").addClass('hide');
+    console.log("Just anything");
+});
+
+$(document).keydown(function (e) {
+    if(e.keyCode === 13){
+        $("dd").addClass("invisible");
+    }
+});
+
+// function toggleClass(selector) {
+//     if($(selector).hasClass(className)){
+//         $(this).addClass("highlight");
+//     });
+// }
+
+
+</script>
 
 </body>
 </html>
