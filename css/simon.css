@@ -1,0 +1,77 @@
+#control-board{
+    width: 600px;
+    height: 600px;
+    border-radius: 30%;
+    border: 16px solid #333;
+    margin: 100px auto;
+    position: relative;
+    box-shadow: 0px 0px 150px #02aeed;
+}
+#stats-circle{
+    height: 300px;
+    width: 300px;
+    background-color: #02aeed;
+    position: absolute;
+    left: 150px;
+    border-radius: 50%;
+    top: 150px;
+    z-index: 100;
+    box-shadow: 0px 0px 0px;
+}
+#heading{
+    text-align: center;
+    font-size: 4em;
+    margin-bottom: 0;
+}
+#title{
+    color: white;
+    font-size: 82px;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 0;
+    margin-bottom: 0;
+    font-family: Arial, serif;
+
+}
+body{
+    background-color: #8e8989;
+}
+p{
+    color: white;
+    font-size: 16px;
+    font-family: Georgia, serif;
+    margin-top: 0;
+    margin-bottom: 0;
+    text-align: center;
+    position: relative;
+    top: -10px;
+}
+h2{
+    margin-top: 5px;
+    color: white;
+    text-align: center;
+    font-family: Georgia, serif;
+    font-size: 40px;
+}
+.square{
+    width: 300px;
+    height: 300px;
+    float: left;
+}
+
+.one{
+    background-color: #00FF00;
+    border-radius: 55% 0 0 0;
+}
+.two {
+    background-color: #e59700;
+    border-radius: 0 55% 0 0;
+}
+.three {
+    background-color: deeppink;
+    border-radius: 0 0 0 55%;
+}
+.four {
+    background-color: olivedrab;
+    border-radius: 0 0 55% 0;
+}
