@@ -1,0 +1,20 @@
+/*body{*/
+    /*background-color: #e59700;*/
+/*}*/
+h1{
+    color: #758e5c;
+}
+#cityname{
+    background-color: #fff8c1;
+    font-size: 5em;
+    font-family: Gugi, cursive;
+    color: #057cc1;
+
+}
+#map-canvas {
+
+    height: 500px;
+}
+#top{
+    height: 4em;
+}
