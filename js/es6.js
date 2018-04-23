@@ -52,8 +52,8 @@ const languages = [];
 
 let user = {
         name: 'Hector',
-        email: 'ksdjflk',
-        languages: ['']
+        email: 'codeup@bing.com',
+        languages: ['java, scrap, merenge']
 };
 users.push(user);
 
