@@ -76,8 +76,20 @@ function wait(number) {
 wait(1000).then(() => console.log('Awesome!'));
 wait(3000).then(() => console.log('you suck!'));
 
-
-
+//
+// const wait = parameter => {
+//     return new Promise ((resolve, reject) => {
+//         setTimeout(() => {
+//         resolve();
+//
+//         }, parameter);
+//     });
+// };
+//
+//
+// wait(1000).then(() => console.log('Awesome!'));
+// wait(3000).then(() => console.log('you suck!'));
+//
 
 
 // fetch(url, {headers: {'Authorization': 'token YOUR_TOKEN_HERE'}})
@@ -119,5 +131,14 @@ function getLastCommit(username) {
 getLastCommit('briantorluemke');
 
 
-
-
+//
+// const request = fetch('https://api.github.com/users/${username}/events/public', {
+//     headers: {'Authorization': ' 96665ace2dafbf4b3a566428d7217da978146d97'}
+// });
+//
+// request
+//     .then(response => response.json())
+//     .then(publicEvents => console.log(publicEvents[0].created_at))
+// ;
+//
+// request.catch(error => console.log(error))
